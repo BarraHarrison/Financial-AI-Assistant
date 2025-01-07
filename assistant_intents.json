@@ -1,0 +1,284 @@
+{
+    "intents": [
+        {
+            "tag": "greetings",
+            "patterns": [
+                "Hey",
+                "Hello",
+                "Hi there",
+                "What's up?"
+            ],
+            "responses": [
+                "Hello Sir!",
+                "Hello Barra!"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "stocks",
+            "patterns": [
+                "Tell me about stocks",
+                "What are the latest stock prices?",
+                "How is the stock market doing?",
+                "Stock updates"
+            ],
+            "responses": [
+                "Which stock are you interested in?",
+                "The stock market is constantly changing. Please specify a company."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "crypto",
+            "patterns": [
+                "Tell me about cryptocurrency",
+                "What are the latest crypto prices?",
+                "How is Bitcoin doing?",
+                "Updates on Ethereum"
+            ],
+            "responses": [
+                "Cryptocurrency prices are highly volatile. Which coin are you interested in?",
+                "Bitcoin is leading the crypto market today!"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "equity",
+            "patterns": [
+                "What is equity?",
+                "Explain equity to me",
+                "How is equity calculated?",
+                "Equity details"
+            ],
+            "responses": [
+                "Equity represents ownership in a company. Do you want me to calculate it for a specific case?",
+                "Equity = Assets - Liabilities."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "bank_balance",
+            "patterns": [
+                "Check my bank account balance",
+                "What is my balance?",
+                "How much money do I have?",
+                "Bank account status"
+            ],
+            "responses": [
+                "I can't directly check your bank balance. Please log in to your bank account.",
+                "For your bank balance, please use your banking app."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "investment_tips",
+            "patterns": [
+                "Give me investment tips",
+                "How should I invest my money?",
+                "Best investment options?",
+                "Investment advice"
+            ],
+            "responses": [
+                "Diversify your investments to minimize risk.",
+                "Always research before investing and consider consulting a financial advisor."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "mutual_funds",
+            "patterns": [
+                "What are mutual funds?",
+                "Explain mutual funds",
+                "Should I invest in mutual funds?",
+                "Mutual fund details"
+            ],
+            "responses": [
+                "Mutual funds pool money from investors to buy securities. They are managed by professionals.",
+                "Mutual funds are a great way to diversify your portfolio."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "loans",
+            "patterns": [
+                "Tell me about loans",
+                "What types of loans are available?",
+                "Loan options",
+                "How can I get a loan?"
+            ],
+            "responses": [
+                "Loans can be secured or unsecured. What type of loan are you interested in?",
+                "Home loans, personal loans, and car loans are common options."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "credit_score",
+            "patterns": [
+                "How do I check my credit score?",
+                "What is a credit score?",
+                "Explain credit score",
+                "Improve credit score tips"
+            ],
+            "responses": [
+                "Your credit score reflects your financial history. Check it through your bank or credit agency.",
+                "Pay bills on time and reduce debt to improve your credit score."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "budgeting",
+            "patterns": [
+                "How do I create a budget?",
+                "Budgeting tips",
+                "Help me with my budget",
+                "Budgeting advice"
+            ],
+            "responses": [
+                "Track your income and expenses, then allocate savings and spending categories.",
+                "Use the 50/30/20 rule: 50% for needs, 30% for wants, and 20% for savings."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "retirement_planning",
+            "patterns": [
+                "How do I plan for retirement?",
+                "Retirement tips",
+                "Help me save for retirement",
+                "Retirement savings advice"
+            ],
+            "responses": [
+                "Start early, invest in retirement accounts, and set realistic goals.",
+                "Consider employer-sponsored plans like 401(k)s or IRAs."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "financial_goals",
+            "patterns": [
+                "How do I set financial goals?",
+                "Financial goal tips",
+                "Help me create financial goals",
+                "Setting financial goals"
+            ],
+            "responses": [
+                "Define short-term and long-term goals, then create a savings and investment plan.",
+                "Break your financial goals into achievable steps."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "debt_management",
+            "patterns": [
+                "How do I manage my debt?",
+                "Debt management tips",
+                "Help me reduce debt",
+                "Managing debt advice"
+            ],
+            "responses": [
+                "Pay off high-interest debt first and avoid taking on new debt.",
+                "Create a debt repayment plan and stick to it."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "insurance",
+            "patterns": [
+                "What types of insurance should I have?",
+                "Explain insurance",
+                "Do I need life insurance?",
+                "Insurance tips"
+            ],
+            "responses": [
+                "Health, auto, and life insurance are common types. Choose what fits your needs.",
+                "Insurance helps mitigate risks. Assess your coverage regularly."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "dividends",
+            "patterns": [
+                "What are dividends?",
+                "Explain dividends",
+                "How do dividends work?",
+                "Dividend details"
+            ],
+            "responses": [
+                "Dividends are payouts from a company's earnings to shareholders.",
+                "They are typically distributed quarterly. Are you invested in any dividend-paying stocks?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "savings",
+            "patterns": [
+                "How do I save money?",
+                "Savings tips",
+                "Help me save more money",
+                "Savings account advice"
+            ],
+            "responses": [
+                "Set aside a portion of your income monthly and automate savings if possible.",
+                "Consider high-yield savings accounts for better returns."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "taxes",
+            "patterns": [
+                "How do I file my taxes?",
+                "Tax filing tips",
+                "Explain taxes",
+                "Tax-saving advice"
+            ],
+            "responses": [
+                "Use tax software or consult a tax professional to file your taxes.",
+                "Claim deductions and credits to save on taxes."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "stock_analysis",
+            "patterns": [
+                "How do I analyze stocks?",
+                "Stock analysis tips",
+                "Help me analyze a stock",
+                "Analyzing stock data"
+            ],
+            "responses": [
+                "Look at financial statements, P/E ratios, and market trends.",
+                "Do you want me to analyze a specific stock?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "market_news",
+            "patterns": [
+                "Tell me the latest financial news",
+                "Market updates",
+                "What's happening in the market?",
+                "Financial news updates"
+            ],
+            "responses": [
+                "The market is ever-changing. Check trusted sources like Bloomberg or Reuters.",
+                "Do you want updates on stocks, crypto, or other markets?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "portfolio_management",
+            "patterns": [
+                "How do I manage my portfolio?",
+                "Portfolio management tips",
+                "Help me optimize my portfolio",
+                "Managing my investments"
+            ],
+            "responses": [
+                "Diversify your investments and review your portfolio regularly.",
+                "Focus on long-term goals and avoid emotional decisions."
+            ],
+            "context_set": ""
+        }
+    ]
+}

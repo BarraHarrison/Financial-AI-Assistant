@@ -9,15 +9,10 @@ import pickle
 import sys
 import datetime as dt 
 
-def greetings_function():
-    pass
+portfolio = {'AAPL': 20,
+             'TSLA': 5,
+             'GS': 10
+             }
 
-# Mappings Dictionary
-mappings = {
-    "greetings": greetings_function
-}
-
-assistant = GenericAssistant("assistant_intents.json", intent_methods = mappings)
-
-assistant.train_model()
-assistant.request("Hello, I want to see the latest stock prices")
+with open('portfolio.pkl', 'wb') as f:
+    pickle.dump(portfolio, f)

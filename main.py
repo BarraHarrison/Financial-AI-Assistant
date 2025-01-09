@@ -40,3 +40,8 @@ def remove_portfolio():
             print("You don't have enough shares!")
     else:
         print(f"You don't own any shares of {ticker}")
+
+def show_portfolio():
+    print("Your Portfolio:")
+    for ticker in portfolio.keys():
+        print(f"You own {portfolio[ticker]} shares of {ticker}")

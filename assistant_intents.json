@@ -279,6 +279,76 @@
                 "Focus on long-term goals and avoid emotional decisions."
             ],
             "context_set": ""
+        },
+        {
+            "tag": "add_to_portfolio",
+            "patterns": [
+                "Add a stock to my portfolio",
+                "Add an asset to my portfolio",
+                "Include a new stock in my portfolio",
+                "How can I add an item to my portfolio?"
+            ],
+            "responses": [
+                "Sure! Please provide the details of the stock or asset you'd like to add.",
+                "What would you like to add to your portfolio?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "remove_from_portfolio",
+            "patterns": [
+                "Remove a stock from my portfolio",
+                "Take an asset out of my portfolio",
+                "Delete an item from my portfolio",
+                "How can I remove an item from my portfolio?"
+            ],
+            "responses": [
+                "Got it! Which stock or asset should I remove from your portfolio?",
+                "Please provide the name of the item you'd like to remove."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "view_portfolio",
+            "patterns": [
+                "Show my portfolio",
+                "What does my portfolio look like?",
+                "Can I see my portfolio?",
+                "Display my portfolio"
+            ],
+            "responses": [
+                "Here is your current portfolio: [portfolio details]",
+                "Your portfolio includes the following assets: [portfolio details]"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "portfolio_value",
+            "patterns": [
+                "What is my portfolio worth?",
+                "Calculate my portfolio value",
+                "How much is my portfolio worth?",
+                "What is the current value of my portfolio?"
+            ],
+            "responses": [
+                "Let me calculate the total value of your portfolio.",
+                "Your portfolio's current value is [calculated value]."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "portfolio_analysis",
+            "patterns": [
+                "Analyze my portfolio",
+                "Can you review my portfolio?",
+                "What do you think of my portfolio?",
+                "Portfolio analysis"
+            ],
+            "responses": [
+                "I can help analyze your portfolio. Do you want an overview or specific suggestions?",
+                "Let me review your portfolio and provide insights."
+            ],
+            "context_set": ""
         }
     ]
 }

@@ -45,3 +45,4 @@ def show_portfolio():
     print("Your Portfolio:")
     for ticker in portfolio.keys():
         print(f"You own {portfolio[ticker]} shares of {ticker}")
+

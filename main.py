@@ -10,7 +10,7 @@ import sys
 import datetime as dt 
 
 
-with open('portfolio.pkl', 'wb') as f:
+with open('portfolio.pkl', 'rb') as f:
     portfolio = pickle.load(f)
 
 def save_portfolio():

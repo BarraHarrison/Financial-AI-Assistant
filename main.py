@@ -10,8 +10,11 @@ import sys
 import datetime as dt 
 
 
-with open('portfolio.pkl', 'rb') as f:
-    portfolio = pickle.load(f)
+try:
+    with open('portfolio.pkl', 'rb') as f:
+        portfolio = pickle.load(f)
+except (FileNotFoundError, EOFError):
+    portfolio = {}
 
 def save_portfolio():
     with open('portfolio.pkl', 'wb') as f:

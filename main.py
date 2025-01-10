@@ -7,7 +7,8 @@ import mplfinance as mpf
 
 import pickle
 import sys
-import datetime as dt 
+import datetime as dt
+import os 
 
 
 try:
@@ -111,7 +112,15 @@ mappings = {
 }
 
 assistant = BasicAssistant('assistant_intents.json', mappings, 'financial_assistant')
-assistant.load_model()
+
+model_path = 'basic_model.keras'
+if not os.path.exists(model_path):
+    print("Model not found. Training the model...")
+    assistant.train_model()
+    assistant.save_model()
+else:
+    print("Loading pre-trained model...")
+    assistant.load_model()
 
 while True:
     message = input("")

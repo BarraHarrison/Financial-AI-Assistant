@@ -93,3 +93,16 @@ def plot_chart():
 def goodbye_function():
     print("Goodbye!")
     sys.exit(0)
+
+
+mappings = {
+    'plot_chart': plot_chart,
+    'add_portfolio': add_portfolio,
+    'remove_portfolio': remove_portfolio,
+    'show_portfolio': show_portfolio,
+    'portfolio_worth': portfolio_worth,
+    'portfolio_gains': portfolio_gains,
+    'bye': goodbye_function
+}
+
+assistant = GenericAssistant('assistant_intents.json', intent_methods=mappings)

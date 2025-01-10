@@ -22,9 +22,9 @@ def add_portfolio():
     amount = input("How many shares do you want to add: ")
 
     if ticker in portfolio.keys():
-        portfolio[ticker] += amount
+        portfolio[ticker] += int(amount)
     else:
-        portfolio[ticker] = amount
+        portfolio[ticker] = int(amount)
 
     save_portfolio()
 
@@ -105,4 +105,10 @@ mappings = {
     'bye': goodbye_function
 }
 
-assistant = GenericAssistant('assistant_intents.json', intent_methods=mappings)
+assistant = GenericAssistant('assistant_intents.json', mappings, 'financial_assistant')
+assistant.train_model()
+assistant.save_model()
+
+while True:
+    message = input("")
+    assistant.request(message)

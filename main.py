@@ -56,7 +56,7 @@ def portfolio_worth():
     for ticker in portfolio.keys():
         data = web.DataReader(ticker, 'yahoo')
         price = data['Close'].iloc[-1]
-        sum += price
+        sum += price * portfolio[ticker]
     print(f"Your portfolio is worth {sum} USD")
 
 def portfolio_gains():
@@ -70,8 +70,8 @@ def portfolio_gains():
             data = web.DataReader(ticker, 'yahoo')
             price_now = data['Close'].iloc[-1]
             price_then = data.loc[data.index == starting_date]['Close'].values[0]
-            sum_now += price_now
-            sum_then += price_then
+            sum_now += price_now * portfolio[ticker]
+            sum_then += price_then * portfolio[ticker]
 
         print(f"Relative Gains: {((sum_now - sum_then)/sum_then) * 100}%")
         print(f"Absolute Gains: {sum_now - sum_then} USD")

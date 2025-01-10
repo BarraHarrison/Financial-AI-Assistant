@@ -1,5 +1,5 @@
 # Financial AI Assistant in Python
-from neuralintents import GenericAssistant
+from neuralintents import BasicAssistant
 import matplotlib.pyplot as plt 
 import pandas as pd 
 import pandas_datareader as web
@@ -110,9 +110,8 @@ mappings = {
     'bye': goodbye_function
 }
 
-assistant = GenericAssistant('assistant_intents.json', mappings, 'financial_assistant')
-assistant.train_model()
-assistant.save_model()
+assistant = BasicAssistant('assistant_intents.json', mappings, 'financial_assistant')
+assistant.load_model()
 
 while True:
     message = input("")

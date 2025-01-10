@@ -46,3 +46,29 @@ def show_portfolio():
     for ticker in portfolio.keys():
         print(f"You own {portfolio[ticker]} shares of {ticker}")
 
+def portfolio_worth():
+    sum = 0
+    for ticker in portfolio.keys():
+        data = web.DataReader(ticker, 'yahoo')
+        price = data['Close'].iloc[-1]
+        sum += price
+    print(f"Your portfolio is worth {sum} USD")
+
+def portfolio_gains():
+    starting_date = input("Enter a date for comparison (YYYY-MM-DD): ")
+
+    sum_now = 0
+    sum_then = 0
+
+    try:
+        for ticker in portfolio.keys():
+            data = web.DataReader(ticker, 'yahoo')
+            price_now = data['Close'].iloc[-1]
+            price_then = data.loc[data.index == starting_date]['Close'].values[0]
+            sum_now += price_now
+            sum_then += price_then
+
+        print(f"Relative Gains: {((sum_now - sum_then)/sum_then) * 100}%")
+        print(f"Absolute Gains: {sum_now - sum_then} USD")
+    except IndexError:
+        print("There was no trading on this date")

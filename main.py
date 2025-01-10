@@ -1,5 +1,5 @@
 # Financial AI Assistant in Python
-from neuralintents import BasicAssistant
+from neuralintents import GenericAssistant
 import matplotlib.pyplot as plt 
 import pandas as pd 
 import pandas_datareader as web
@@ -102,16 +102,16 @@ def goodbye_function():
 
 
 mappings = {
-    'plot_chart': plot_chart,
     'add_portfolio': add_portfolio,
     'remove_portfolio': remove_portfolio,
     'show_portfolio': show_portfolio,
     'portfolio_worth': portfolio_worth,
     'portfolio_gains': portfolio_gains,
+    'plot_chart': plot_chart,
     'bye': goodbye_function
 }
 
-assistant = BasicAssistant('assistant_intents.json', mappings, 'financial_assistant')
+assistant = GenericAssistant('assistant_intents.json', mappings, 'financial_assistant')
 
 model_path = 'basic_model.keras'
 if not os.path.exists(model_path):

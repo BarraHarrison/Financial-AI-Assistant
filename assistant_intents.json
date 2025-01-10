@@ -281,7 +281,7 @@
             "context_set": ""
         },
         {
-            "tag": "add_to_portfolio",
+            "tag": "add_portfolio",
             "patterns": [
                 "Add a stock to my portfolio",
                 "Add an asset to my portfolio",
@@ -295,7 +295,7 @@
             "context_set": ""
         },
         {
-            "tag": "remove_from_portfolio",
+            "tag": "remove_portfolio",
             "patterns": [
                 "Remove a stock from my portfolio",
                 "Take an asset out of my portfolio",
@@ -309,7 +309,7 @@
             "context_set": ""
         },
         {
-            "tag": "view_portfolio",
+            "tag": "show_portfolio",
             "patterns": [
                 "Show my portfolio",
                 "What does my portfolio look like?",
@@ -323,7 +323,7 @@
             "context_set": ""
         },
         {
-            "tag": "portfolio_value",
+            "tag": "portfolio_worth",
             "patterns": [
                 "What is my portfolio worth?",
                 "Calculate my portfolio value",
@@ -337,7 +337,7 @@
             "context_set": ""
         },
         {
-            "tag": "portfolio_analysis",
+            "tag": "portfolio_gains",
             "patterns": [
                 "Analyze my portfolio",
                 "Can you review my portfolio?",

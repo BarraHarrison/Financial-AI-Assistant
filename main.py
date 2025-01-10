@@ -33,11 +33,13 @@ def add_portfolio():
 
 def remove_portfolio():
     ticker = input("Which stock do you want to sell: ")
-    amount = input("How many shares do you want to sell: ")
+    amount = int(input("How many shares do you want to sell: "))
 
     if ticker in portfolio.keys():
         if amount <= portfolio[ticker]:
-            portfolio[ticker] -= int(amount)
+            portfolio[ticker] -= amount
+            if portfolio[ticker] == 0:
+                del portfolio[ticker]
             save_portfolio()
         else:
             print("You don't have enough shares!")

@@ -72,3 +72,16 @@ def portfolio_gains():
         print(f"Absolute Gains: {sum_now - sum_then} USD")
     except IndexError:
         print("There was no trading on this date")
+
+def plot_chart():
+    ticker = input("Choose a ticker symbol: ")
+    starting_string = input("Choose a starting date: (DD/MM/YYYY): ")
+
+    plt.style.use('dark_background')
+
+    start = dt.datetime.strptime(starting_string, "%d/%m/%Y")
+    end = dt.datetime.now()
+    
+    data = web.DataReader(ticker, 'yahoo', start, end)
+
+    colors = mpf.make_marketcolors(up="#00ff00", down="#ff0000", wick='inherit', edge="inherit")

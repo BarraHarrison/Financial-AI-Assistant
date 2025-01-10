@@ -34,7 +34,7 @@ def remove_portfolio():
 
     if ticker in portfolio.keys():
         if amount <= portfolio[ticker]:
-            portfolio[ticker] -= amount
+            portfolio[ticker] -= int(amount)
             save_portfolio()
         else:
             print("You don't have enough shares!")
